@@ -11,6 +11,9 @@ class Listing < ActiveRecord::Base
 
   before_validation :set_uuid, on: :create
 
+  has_many :listing_images
+  has_and_belongs_to_many :users
+
   private
 
   def set_uuid

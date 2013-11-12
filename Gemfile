@@ -4,11 +4,13 @@ ruby '2.0.0'
 
 gem 'airbrake'
 gem 'bourbon'
+gem 'carrierwave'
 gem 'clearance'
 gem 'coffee-rails'
 gem 'delayed_job_active_record', '>= 4.0.0'
 gem 'email_validator'
 gem 'flutie'
+gem "fog", "~> 1.3.1"
 gem 'high_voltage'
 gem 'jquery-rails'
 gem 'neat'
@@ -19,6 +21,7 @@ gem 'recipient_interceptor'
 gem 'sass-rails'
 gem 'simple_form'
 gem 'uglifier'
+gem 'unf'
 gem 'unicorn'
 
 group :development do
@@ -30,6 +33,7 @@ end
 group :development, :test do
   gem 'factory_girl_rails'
   gem 'rspec-rails', '>= 2.14'
+  gem 'dotenv-rails'
 end
 
 group :test do

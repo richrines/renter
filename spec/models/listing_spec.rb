@@ -3,6 +3,7 @@ require 'spec_helper'
   # move images into there own model?
   # primary_image FK to images table
   # muliple images?
+  # images in carrierwave
   # contact pmcs directly
   # pmc table in future?
   # t.float :impressions, default: 0.0, null: false
@@ -19,6 +20,11 @@ describe Listing, 'Validations' do
   it { expect(subject).to validate_presence_of(:square_feet) }
   it { expect(subject).to validate_presence_of(:url) }
   it { expect(subject).to validate_presence_of(:uuid) }
+end
+
+describe Listing, 'Associations' do
+  it { expect(subject).to have_many(:listing_images) }
+  it { expect(subject).to have_and_belong_to_many(:users) }
 end
 
 describe Listing, '#create' do

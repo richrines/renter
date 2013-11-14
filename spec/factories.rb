@@ -3,9 +3,17 @@ FactoryGirl.define do
     "user#{n}@example.com"
   end
 
+ sequence :address do |n|
+    "#{n} Fake Street"
+  end
+
+  factory :listing_image do
+    listing
+  end
+
   factory :listing do
     active true
-    address '123 Fake Street'
+    address
     bath_count 3.0
     bed_count 2.0
     floor_plan 'a1'

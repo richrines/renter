@@ -1,5 +1,6 @@
 class ListingsUsersController < ActionController::Base
   def create
+    ListingsUser.new(listings_user_params)
     render text: 'success'
   end
 

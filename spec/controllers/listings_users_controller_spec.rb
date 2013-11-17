@@ -12,7 +12,7 @@ describe ListingsUsersController, '#create' do
       'viewed' => true
     }
 
-    expect(Listing.last.users).to eq [user]
-    expect(User.last.listings).to eq [listing]
+    expect(Listing.last.users.first).to eq user
+    expect(User.last.listings.first).to eq listing
   end
 end

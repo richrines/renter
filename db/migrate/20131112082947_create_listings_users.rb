@@ -1,6 +1,6 @@
 class CreateListingsUsers < ActiveRecord::Migration
   def change
-    create_table :listings_users do |t|
+    create_table :user_listings do |t|
       t.timestamps null: false
       t.boolean :liked, default: false, null: false
       t.belongs_to :listing

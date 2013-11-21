@@ -24,7 +24,7 @@ end
 
 describe Listing, 'Associations' do
   it { expect(subject).to have_many(:listing_images) }
-  it { expect(subject).to have_many(:users).through(:listings_users) }
+  it { expect(subject).to have_many(:users).through(:user_listing) }
 end
 
 describe Listing, '#create' do

@@ -12,7 +12,8 @@ class Listing < ActiveRecord::Base
   before_validation :set_uuid, on: :create
 
   has_many :listing_images
-  has_many :users, through: :listings_users
+  has_many :user_listings
+  has_many :users, through: :user_listings
 
   private
 

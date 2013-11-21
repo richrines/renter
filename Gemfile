@@ -5,6 +5,7 @@ ruby '2.0.0'
 gem 'airbrake'
 gem "active_model_serializers"
 gem 'bourbon'
+gem 'bitters'
 gem 'carrierwave'
 gem 'clearance'
 gem 'coffee-rails'

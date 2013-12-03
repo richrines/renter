@@ -16,6 +16,7 @@ gem 'high_voltage'
 gem 'jquery-rails'
 gem 'neat'
 gem 'pg'
+gem "rack-reverse-proxy", :require => "rack/reverse_proxy"
 gem 'rack-timeout'
 gem 'rails', '>= 4.0.0'
 gem 'recipient_interceptor'

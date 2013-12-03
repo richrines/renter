@@ -133,6 +133,8 @@ GEM
     pg (0.17.0)
     polyglot (0.3.3)
     rack (1.5.2)
+    rack-reverse-proxy (0.4.4)
+      rack (>= 1.0.0)
     rack-test (0.6.2)
       rack (>= 1.0)
     rack-timeout (0.0.4)
@@ -246,6 +248,7 @@ DEPENDENCIES
   neat
   newrelic_rpm (>= 3.6.7)
   pg
+  rack-reverse-proxy
   rack-timeout
   rails (>= 4.0.0)
   rails_12factor
